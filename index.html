@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1, 2 & 3 BHK Project in Jogeshwari East, Mumbai</title>
+    <meta
+      name="description"
+      content="Discover Stylish Living at DTG Aurum, Jogeshwari East, Mumbai, offering spacious 1, 2 & 3 BHK Flats."
+    />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Animate Min CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="assets/fonts/flaticon.css" />
+    <!-- Boxicons CSS -->
+    <link rel="stylesheet" href="assets/css/boxicons.min.css" />
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <!-- Owl Carousel Min CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <!-- Nice Select Min CSS -->
+    <link rel="stylesheet" href="assets/css/nice-select.min.css" />
+    <!-- Meanmenu CSS -->
+    <link rel="stylesheet" href="assets/css/meanmenu.css" />
+    <!-- Jquery Ui CSS -->
+    <link rel="stylesheet" href="assets/css/jquery-ui.css" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- Theme Dark CSS -->
+    <link rel="stylesheet" href="assets/css/theme-dark.css" />
+
+    <!-- my CSS -->
+    <link rel="stylesheet" href="assets/css/my.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/Logo/favicon.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Top Header End -->
+
+    <!-- Start Navbar Area -->
+    <div class="navbar-area">
+      <!-- Menu For Mobile Device -->
+      <div class="mobile-nav">
+        <a href="index.html" class="logo">
+          <img src="assets/Logo/dt-auram.jpg" class="logo-one" alt="Logo" />
+          <img src="assets/Logo/dt-auram.jpg" class="logo-two" alt="Logo" />
+        </a>
+      </div>
+
+      <!-- Menu For Desktop Device -->
+      <div class="main-nav">
+        <div class="container">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="assets/Logo/dt-auram.jpg"
+                class="logo-one"
+                alt="Logo"
+                width="120"
+                height="60"
+              />
+              <img src="assets/Logo/dt-auram.jpg" class="logo-two" alt="Logo" />
+            </a>
+
+            <div
+              class="collapse navbar-collapse mean-menu"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav m-auto">
+                <li class="nav-item">
+                  <a href="#" class="nav-link active"> Overview </a>
+                </li>
+                <li class="nav-item">
+                  <a href="about.html" class="nav-link"> Configuration </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link"> Amenities </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link"> Gallery </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link">
+                    Location Advantage
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link"> About Us </a>
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link"> Contact Us </a>
+                </li>
+              </ul>
+
+              <div class="nav-btn">
+                <a
+                  href="book.html"
+                  class="default-btn btn-bg-one border-radius-5"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- End Navbar Area -->
+
+    <!-- Banner Area -->
+    <div
+      class="banner-area"
+      style="
+        background-image: url(&quot;assets/Elevation/banner-1.jpg&quot;);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 700px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+      "
+    >
+      <div class="container">
+        <div class="banner-content">
+          <h1>DTG Aurum – Urban Living in Jogeshwari East</h1>
+          <p>
+            This stunning residential & commercial hub offers sleek shops,
+            stylish 1, 2 & 3 BHKs crafted for a hasslefree, modern lifestyle!
+            Enjoy the perfect blend of comfort, convenience, and connectivity in
+            one of Mumbai’s most sought-after neighborhoods Benefit from easy
+            access to Link Road, Western Expressway, and metro lines for
+            effortless commuting. Experience modern amenities including a
+            well-equipped gym, Tower Parking and serene roof garden.
+          </p>
+          <!-- Button -->
+          <div class="banner-btn">
+            <a
+              href="#"
+              class="default-btn btn-bg-one border-radius-5"
+              onclick="openPopup()"
+            >
+              Enquire Now
+            </a>
+          </div>
+
+          <!-- Popup Form -->
+          <div id="popupForm" class="popup-overlay">
+            <div class="popup-box">
+              <span class="close-btn" onclick="closePopup()">&times;</span>
+
+              <h2>Enquiry Form</h2>
+              <p>
+                Please enter the details below to get the detailed pricing
+                information.
+              </p>
+
+              <form id="enquiryForm">
+                <input type="text" name="name" placeholder="Name" required />
+                <input type="tel" name="number" placeholder="Number" required />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email ID"
+                  required
+                />
+
+                <button type="submit">Submit Enquiry</button>
+
+                <div id="loader" style="display: none">
+                  <div class="spinner"></div>
+                  Submitting...
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner Area End -->
+
+    <script>
+      function openPopup() {
+        document.getElementById("popupForm").style.display = "block";
+      }
+
+      function closePopup() {
+        document.getElementById("popupForm").style.display = "none";
+      }
+
+      document
+        .getElementById("enquiryForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          document.getElementById("loader").style.display = "block";
+
+          const formData = new FormData();
+
+          formData.append("entry.1111111111", this.name.value);
+          formData.append("entry.2222222222", this.number.value);
+          formData.append("entry.3333333333", this.email.value);
+
+          fetch("YOUR_GOOGLE_FORM_URL", {
+            method: "POST",
+            mode: "no-cors",
+            body: formData,
+          }).then(() => {
+            alert("Enquiry submitted successfully!");
+            document.getElementById("loader").style.display = "none";
+            closePopup();
+            this.reset();
+          });
+        });
+    </script>
+
+    <section class="project-highlight">
+      <div class="container">
+        <div class="highlight-heading">
+          <h2>Project Highlight</h2>
+          <p>
+            Experience premium connectivity, modern amenities, and luxurious
+            living.
+          </p>
+        </div>
+
+        <div class="highlight-grid">
+          <div class="highlight-card">
+            <i class="fas fa-train"></i>
+            <h4>10 mins from Jogeshwari Railway Station</h4>
+          </div>
+
+          <div class="highlight-card">
+            <i class="fas fa-subway"></i>
+            <h4>8 mins from Mogra Metro Station</h4>
+          </div>
+
+          <div class="highlight-card">
+            <i class="fas fa-building"></i>
+            <h4>Rooftop Amenities</h4>
+          </div>
+
+          <div class="highlight-card">
+            <i class="fas fa-door-open"></i>
+            <h4>Luxurious Entrance Lobby</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Area -->
+    <section class="services-area pb-70">
+      <div class="container">
+        <div class="section-title text-center">
+          <span>Configuration</span>
+          <h2>Choose Your Perfect Home</h2>
+        </div>
+
+        <div class="services-slider owl-carousel owl-theme pt-45">
+          <!-- 1 BHK -->
+          <div class="services-item">
+            <i class="fas fa-home"></i>
+            <h3>1 BHK</h3>
+            <p>361 - 412 sq. ft.</p>
+            <a href="#" class="get-btn" onclick="openPopup()">Check Price</a>
+          </div>
+
+          <!-- 2 BHK -->
+          <div class="services-item">
+            <i class="fas fa-home"></i>
+            <h3>2 BHK</h3>
+            <p>525 - 612 sq. ft.</p>
+            <a href="#" class="get-btn" onclick="openPopup()">Check Price</a>
+          </div>
+
+          <!-- 3 BHK -->
+          <div class="services-item">
+            <i class="fas fa-home"></i>
+            <h3>3 BHK</h3>
+            <p>745 sq. ft.</p>
+            <a href="#" class="get-btn" onclick="openPopup()">Check Price</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popup Form -->
+    <div id="popupForm" class="popup-overlay">
+      <div class="popup-box">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+
+        <h2>Get Pricing Details</h2>
+        <p>Please enter your details below.</p>
+
+        <form>
+          <input type="text" placeholder="Name" required />
+          <input type="tel" placeholder="Number" required />
+          <input type="email" placeholder="Email ID" required />
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- Services Area End -->
+
+    <section class="comfort-area">
+      <div class="container">
+        <div class="comfort-title">
+          <span>Premium Amenities</span>
+          <h2>A World of Comfort Designed Around You!</h2>
+        </div>
+
+        <div class="comfort-grid">
+          <div class="comfort-box">
+            <i class="fas fa-door-open"></i>
+            <p>Luxurious Entrance Lobby</p>
+          </div>
+
+          <div class="comfort-box">
+            <i class="fas fa-building"></i>
+            <p>Rooftop Amenities</p>
+          </div>
+
+          <div class="comfort-box">
+            <i class="fas fa-dumbbell"></i>
+            <p>Fully Equipped Gym</p>
+          </div>
+
+          <div class="comfort-box">
+            <i class="fas fa-arrow-up"></i>
+            <p>High Speed Elevators with ARD</p>
+          </div>
+
+          <div class="comfort-box">
+            <i class="fas fa-fire-extinguisher"></i>
+            <p>Firefighting & Alarm System</p>
+          </div>
+
+          <div class="comfort-box">
+            <i class="fas fa-tint"></i>
+            <p>Rain Water Harvesting System</p>
+          </div>
+
+          <div class="comfort-box">
+            <i class="fas fa-video"></i>
+            <p>24/7 CCTV Surveillance</p>
+          </div>
+
+          <div class="comfort-box">
+            <i class="fas fa-car"></i>
+            <p>Tower Parking</p>
+          </div>
+
+          <div class="comfort-box">
+            <i class="fas fa-paint-roller"></i>
+            <p>Texture Paint for External Walls</p>
+          </div>
+
+          <div class="comfort-box">
+            <i class="fas fa-shield-alt"></i>
+            <p>Brick Bat Waterproofing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Area -->
+    <div class="specialty-area pt-100 pb-70">
+      <div class="container">
+        <div class="section-title text-center">
+          <span>LOCATION ADVANTAGE</span>
+          <h2>Excellent Connectivity & Nearby Facilities</h2>
+        </div>
+
+        <div class="row pt-45 align-items-center">
+          <!-- Google Map -->
+          <div class="col-lg-6">
+            <div class="specialty-img map-box">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.456804115904!2d72.861132!3d19.1314715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7d7b063181d%3A0x57da1b2dc42a3ce5!2sMeghwadi%20Police%20Station!5e0!3m2!1sen!2sin!4v1778781345697!5m2!1sen!2sin"
+                width="100%"
+                height="500"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Connectivity Content -->
+          <div class="col-lg-6">
+            <div class="specialty-list">
+              <div class="specialty-list-card">
+                <!-- <i class="fas fa-road"></i> -->
+                <h3>Connectivity</h3>
+                <ul>
+                  <li>5 mins from Jogeshwari-Vikhroli Link Road</li>
+                  <li>7 mins from Western Express Highway</li>
+                  <li>12 mins from Aarey Colony</li>
+                  <li>10 mins from Jogeshwari Railway Station</li>
+                  <li>8 mins from Mogra Metro Station</li>
+                  <li>19 mins from CSM Int’l Airport</li>
+                </ul>
+              </div>
+
+              <div class="specialty-list-card mt-4">
+                <!-- <i class="fas fa-hospital"></i> -->
+                <h3>Facilities Nearby</h3>
+                <ul>
+                  <li>6 mins to Holy Spirit Hospital</li>
+                  <li>17 mins from Powai Educational Campus</li>
+                  <li>20 mins from Infiniti Mall, Andheri</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Location Area End -->
+
+    <!-- About Area -->
+    <div class="about-area pt-100 pb-70">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <!-- Left Image / Logo -->
+          <div class="col-lg-6">
+            <div class="about-img text-center">
+              <img
+                src="assets/Elevation/about.jpg"
+                alt="Logo"
+                class="about-logo"
+              />
+            </div>
+          </div>
+
+          <!-- Right Content -->
+          <div class="col-lg-6">
+            <div class="about-content">
+              <div class="section-title">
+                <span>About Us</span>
+                <h2>Shaping Tomorrow</h2>
+
+                <p>
+                  Dhariwal Thirani Group is engaged in building redevelopment
+                  and construction of residential and commercial projects. The
+                  group has a proven track record of successful projects and
+                  satisfied clients.
+                </p>
+
+                <p>
+                  Led by a team of highly skilled professionals, the company has
+                  a wealth of expertise in all aspects of building redevelopment
+                  and construction, including project management, engineering,
+                  architecture, and design.
+                </p>
+              </div>
+
+              <!-- Contact Form -->
+              <div class="contact-box">
+                <h4>Please enter the details below to get in touch with us!</h4>
+
+                <form>
+                  <input type="text" placeholder="Name" required />
+                  <input type="tel" placeholder="Number" required />
+                  <input type="email" placeholder="Email Id" required />
+
+                  <button
+                    type="submit"
+                    class="default-btn btn-bg-one border-radius-5"
+                  >
+                    Submit
+                  </button>
+                </form>
+
+                <p class="terms">
+                  By submitting your details, you agree to the Terms &
+                  Conditions
+                </p>
+              </div>
+
+              <!-- Address -->
+              <div class="address-box">
+                <h5>Address:</h5>
+                <p>
+                  24, Salsingkar Rd, Income Tax Colony, Sher E Punjab Colony,
+                  Jogeshwari East, Mumbai, Maharashtra 400060
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Area End -->
+
+    <!-- Footer Area -->
+    <footer class="footer-area footer-bg">
+      <div class="container">
+        <div class="footer-top pt-100 pb-70">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="index.html">
+                    <img src="assets/img/logos/footer-logo1.png" alt="Images" />
+                  </a>
+                </div>
+                <p>
+                  Aenean finibus convallis nisl sit amet hendrerit. Etiam
+                  blandit velit non lorem mattis, non ultrices eros bibendum .
+                </p>
+                <ul class="footer-list-contact">
+                  <li>
+                    <i class="bx bx-home-alt"></i>
+                    <a href="#">123 Stanton, Virginia, USA</a>
+                  </li>
+                  <li>
+                    <i class="bx bx-phone-call"></i>
+                    <a href="tel:+1-(123)-456-7890">+1 (123) 456 7890</a>
+                  </li>
+                  <li>
+                    <i class="bx bx-envelope"></i>
+                    <a
+                      href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#4f272a2323200f2e3b202326612c2022"
+                      ><span
+                        class="__cf_email__"
+                        data-cfemail="026a676e6e6d4263766d6e6b2c616d6f"
+                        >[email&#160;protected]</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-widget pl-5">
+                <h3>Links</h3>
+                <ul class="footer-list">
+                  <li>
+                    <a href="about.html" target="_blank">
+                      <i class="bx bx-caret-right"></i>
+                      About Us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="services-1.html" target="_blank">
+                      <i class="bx bx-caret-right"></i>
+                      Services
+                    </a>
+                  </li>
+                  <li>
+                    <a href="team.html" target="_blank">
+                      <i class="bx bx-caret-right"></i>
+                      Team
+                    </a>
+                  </li>
+                  <li>
+                    <a href="gallery.html" target="_blank">
+                      <i class="bx bx-caret-right"></i>
+                      Gallery
+                    </a>
+                  </li>
+                  <li>
+                    <a href="terms-condition.html" target="_blank">
+                      <i class="bx bx-caret-right"></i>
+                      Terms
+                    </a>
+                  </li>
+                  <li>
+                    <a href="privacy-policy.html" target="_blank">
+                      <i class="bx bx-caret-right"></i>
+                      Privacy Policy
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-widget">
+                <h3>Useful Links</h3>
+                <ul class="footer-list">
+                  <li>
+                    <a href="index.html" target="_blank">
+                      <i class="bx bx-caret-right"></i>
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="blog-1.html" target="_blank">
+                      <i class="bx bx-caret-right"></i>
+                      Blog
+                    </a>
+                  </li>
+                  <li>
+                    <a href="faq.html" target="_blank">
+                      <i class="bx bx-caret-right"></i>
+                      FAQ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="testimonials.html" target="_blank">
+                      <i class="bx bx-caret-right"></i>
+                      Testimonials
+                    </a>
+                  </li>
+                  <li>
+                    <a href="gallery.html" target="_blank">
+                      <i class="bx bx-caret-right"></i>
+                      Gallery
+                    </a>
+                  </li>
+                  <li>
+                    <a href="contact.html" target="_blank">
+                      <i class="bx bx-caret-right"></i>
+                      Contact Us
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-widget">
+                <h3>Newsletter</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam tempor eget ante fringilla rutrum aenean sed venenatis
+                  .
+                </p>
+                <div class="footer-form">
+                  <form
+                    class="newsletter-form"
+                    data-toggle="validator"
+                    method="POST"
+                  >
+                    <div class="row justify-content-center">
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Your Email*"
+                            name="EMAIL"
+                            required
+                            autocomplete="off"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-lg-12 col-md-12">
+                        <button type="submit" class="default-btn btn-bg-one">
+                          Subscribe Now
+                        </button>
+                        <div
+                          id="validator-newsletter"
+                          class="form-result"
+                        ></div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="copy-right-area">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-8">
+              <div class="copy-right-text text-align1">
+                <p>© 2026 <span>Dhariwal Thirani Group</span></p>
+              </div>
+            </div>
+
+            <!-- <div class="col-lg-4 col-md-4">
+              <div class="social-icon text-align2">
+                <ul class="social-link">
+                  <li>
+                    <a href="https://www.facebook.com/login/" target="_blank"
+                      ><i class="bx bxl-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/i/flow/login" target="_blank"
+                      ><i class="bx bxl-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/accounts/login/"
+                      target="_blank"
+                      ><i class="bx bxl-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.pinterest.com/" target="_blank"
+                      ><i class="bx bxl-pinterest-alt"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/watch?v=zWPsjhBaRb0"
+                      target="_blank"
+                      ><i class="bx bxl-youtube"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!-- Jquery Min JS -->
+    <script
+      data-cfasync="false"
+      src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap Bundle Min JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Magnific Popup Min JS -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Owl Carousel Min JS -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Nice Select Min JS -->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!-- Wow Min JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Jquery Ui JS -->
+    <script src="assets/js/jquery-ui.js"></script>
+    <!-- Meanmenu JS -->
+    <script src="assets/js/meanmenu.js"></script>
+    <!-- Ajaxchimp Min JS -->
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <!-- Mixitup JS -->
+    <script src="assets/js/mixitup.min.js"></script>
+    <!-- Form Validator Min JS -->
+    <script src="assets/js/form-validator.min.js"></script>
+    <!-- Contact Form JS -->
+    <script src="assets/js/contact-form-script.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
