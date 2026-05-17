@@ -46,100 +46,166 @@
   <!-- Top Header End -->
 
   <!-- Start Navbar Area -->
+  <!-- ================= NAVBAR AREA ================= -->
   <div class="navbar-area">
-    <!-- Menu For Mobile Device -->
+
+    <!-- ========== MOBILE NAVBAR ========== -->
     <div class="mobile-nav">
-      <a href="index.html" class="logo">
-        <img src="assets/Logo/dt-auram.jpg" class="logo-one" alt="Logo" />
-        <img src="assets/Logo/dt-auram.jpg" class="logo-two" alt="Logo" />
+
+      <!-- Left Logo -->
+      <a href="index.html" class="mobile-logo">
+        <img src="assets/Logo/dt-auram.jpg" alt="Main Logo">
       </a>
+
+      <!-- Right Logo -->
+      <div class="mobile-side-logo-wrapper">
+        <img src="assets/Logo/DTG-Jogeshwari-Mumbai.png" alt="DTG Logo">
+      </div>
+
+      <!-- Mobile Menu Icon -->
+      <div class="mobile-menu" id="mobileMenuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
     </div>
 
-    <!-- Menu For Desktop Device -->
+    <!-- ========== MOBILE DRAWER SIDEBAR ========== -->
+    <div class="mobile-sidebar-overlay" id="sidebarOverlay"></div>
+    <div class="mobile-sidebar" id="mobileSidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-logo-group">
+          <img src="assets/Logo/dt-auram.jpg" alt="Main Logo" class="drawer-logo-one">
+          <img src="assets/Logo/DTG-Jogeshwari-Mumbai.png" alt="DTG Logo" class="drawer-logo-two">
+        </div>
+        <button class="sidebar-close" id="sidebarCloseBtn">&times;</button>
+      </div>
+      <div class="sidebar-body">
+        <ul class="sidebar-nav">
+          <li><a href="/index.html" class="active">Overview</a></li>
+          <li><a href="#configuration">Configuration</a></li>
+          <li><a href="#amenities">Amenities</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#advantage">Location Advantage</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-footer">
+        <a href="javascript:void(0)" class="default-btn btn-bg-one border-radius-5 w-100 text-center py-3"
+          onclick="openEnquiryPopup(); closeMobileSidebar();">
+          Book Now
+        </a>
+      </div>
+    </div>
+
+    <!-- ========== DESKTOP NAVBAR ========== -->
     <div class="main-nav">
       <div class="container">
         <nav class="navbar navbar-expand-md navbar-light">
+
+          <!-- Main Logo -->
           <a class="navbar-brand" href="index.html">
             <img src="assets/Logo/dt-auram.jpg" class="logo-one" alt="Logo" width="120" height="60" />
-            <img src="assets/Logo/dt-auram.jpg" class="logo-two" alt="Logo" />
           </a>
 
-          <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <!-- Menu -->
             <ul class="navbar-nav m-auto">
+
               <li class="nav-item">
-                <a href="/index.html" class="nav-link active"> Overview </a>
-              </li>
-              <li class="nav-item">
-                <a href="#configuration" class="nav-link"> Configuration </a>
+                <a href="/index.html" class="nav-link active">Overview</a>
               </li>
 
               <li class="nav-item">
-                <a href="#amenities" class="nav-link"> Amenities </a>
+                <a href="#configuration" class="nav-link">Configuration</a>
               </li>
 
               <li class="nav-item">
-                <a href="#gallery" class="nav-link"> Gallery </a>
+                <a href="#amenities" class="nav-link">Amenities</a>
               </li>
 
               <li class="nav-item">
-                <a href="#advantage" class="nav-link"> Location Advantage </a>
+                <a href="#gallery" class="nav-link">Gallery</a>
               </li>
+
               <li class="nav-item">
-                <a href="#about" class="nav-link"> About Us </a>
+                <a href="#advantage" class="nav-link">Location Advantage</a>
               </li>
+
               <li class="nav-item">
-                <a href="#contact" class="nav-link"> Contact Us </a>
+                <a href="#about" class="nav-link">About Us</a>
               </li>
+
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact Us</a>
+              </li>
+
             </ul>
 
+            <!-- Right Side -->
             <div class="nav-btn">
-              <a href="javascript:void(0)" class="default-btn btn-bg-one border-radius-5"
-                onclick="openEnquiryPopup()">Book Now</a>
+
+              <!-- DTG Logo -->
+              <img src="assets/Logo/DTG-Jogeshwari-Mumbai.png" class="side-logo" alt="DTG Logo" />
+
+              <!-- Book Button -->
+              <a href="javascript:void(0)" class="default-btn btn-bg-one border-radius-5" onclick="openEnquiryPopup()">
+                Book Now
+              </a>
+
             </div>
+
           </div>
         </nav>
       </div>
     </div>
+
   </div>
   <!-- End Navbar Area -->
 
   <!-- Banner Area -->
-  <div class="banner-area" style="
-        background-image: url(&quot;assets/Elevation/banner-1.jpg&quot;);
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        min-height: 700px;
-        display: flex;
-        align-items: center;
-        width: 100%;
-      ">
-    <div class="container">
-      <div class="banner-content">
-        <h1>DTG Aurum Urban Living in Jogeshwari East</h1>
+  <!-- Banner Section -->
+  <section class="banner-area ">
+    <picture>
+      <!-- Mobile Banner -->
+      <source media="(max-width: 767px)" srcset="assets/mobile-banner.jpeg">
+
+      <!-- Desktop Banner -->
+      <img src="assets/web-banner.jpeg" alt="DTG Aurum Banner" class="banner-bg">
+    </picture>
+  </section>
+
+
+  <section class="aurum-banner-section">
+    <div class="aurum-banner-container">
+      <div class="aurum-banner-content">
+
+        <h1>DTG Aurum Urban Living at Jogeshwari East</h1>
+
         <h2>
-          Stylish 1 BHK & Jodi Project nearby Link Road, Western Expressway,
-          and Metro Lines.
+          Stylish 1 BHK & Jodi Project nearby Link Road,
+          Western Expressway, and Metro Lines.
         </h2>
+
         <p>
           This stunning residential & commercial hub offers sleek shops,
-          stylish 1 BHK and Jodi Flats crafted for a hasslefree, modern
-          lifestyle! Enjoy the perfect blend of comfort, convenience, and
-          connectivity in one of Mumbai’s most sought-after neighborhoods.
-          Benefit from easy access to Link Road, Western Expressway, and metro
-          lines for effortless commuting. Experience modern amenities
-          including a well-equipped gym, Tower Parking and serene roof garden.
+          stylish 1 BHK and Jodi Flats crafted for a hassle-free modern lifestyle.
+          Enjoy the perfect blend of comfort, convenience, and connectivity.
         </p>
-        <!-- Button -->
-        <div class="banner-btn">
+
+        <div class="aurum-banner-btn">
           <a href="javascript:void(0)" class="default-btn btn-bg-one border-radius-5" onclick="openEnquiryPopup()">
             Enquire Now
           </a>
         </div>
+
       </div>
     </div>
-  </div>
-  <!-- Banner Area End -->
+  </section>
+
 
   <section class="project-highlight">
     <div class="container">
@@ -178,81 +244,176 @@
   <section class="configuration-area pt-100 pb-70">
     <div class="container">
       <div class="section-title text-center">
-        <span>CONFIGURATION</span>
-        <h2>Choose Your Perfect Home</h2>
+        <span class="sub-title">CONFIGURATION</span>
+        <h2 class="main-title">Choose Your Perfect Home</h2>
       </div>
 
       <div class="row mt-5">
-        <!-- Jodi Flat -->
-        <div class="col-lg-6 col-md-6 mb-4">
+        <div class="col-lg-6 mb-4">
           <div class="config-card">
-            <div class="icon-box">
-              <i class="bx bxs-home"></i>
+            <div class="card-left">
+              <div class="icon-box">
+                <i class="bx bxs-home"></i>
+              </div>
+              <div class="card-content">
+                <h3>1 BHK</h3>
+                <p class="area-text">361 - 412 sq. ft.</p>
+              </div>
             </div>
-            <h3>Jodi Flat</h3>
-            <p>525 - 612 sq. ft.</p>
-
-            <!-- Your popup -->
-            <a href="#pricePopup1" class="popup-btn" onclick="openEnquiryPopup()">Check Price</a>
+            <div class="card-right">
+              <a href="#pricePopup2" class="submit-enquiry-btn" onclick="openEnquiryPopup()">Check Price</a>
+            </div>
           </div>
         </div>
 
-        <!-- 1 BHK -->
-        <div class="col-lg-6 col-md-6 mb-4">
+        <div class="col-lg-6 mb-4">
           <div class="config-card">
-            <div class="icon-box">
-              <i class="bx bxs-home"></i>
+            <div class="card-left">
+              <div class="icon-box">
+                <i class="bx bxs-home"></i>
+              </div>
+              <div class="card-content">
+                <h3>Jodi Flat</h3>
+                <p class="area-text">525 - 612 sq. ft.</p>
+              </div>
             </div>
-            <h3>1 BHK</h3>
-            <p>361 - 412 sq. ft.</p>
-
-            <!-- Your popup -->
-            <a href="#pricePopup2" class="popup-btn" onclick="openEnquiryPopup()">Check Price</a>
+            <div class="card-right">
+              <a href="#pricePopup1" class="submit-enquiry-btn" onclick="openEnquiryPopup()">Check Price</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
   <style>
+    /* Section Typography */
+    .section-title .sub-title {
+      font-size: 14px;
+      letter-spacing: 2px;
+      color: #bfa13b;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .section-title .main-title {
+      font-size: 36px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-top: 5px;
+    }
+
+    /* Premium Config Card - Flex Row Layout */
     .config-card {
-      background: #f7f7f7;
+      background: #f9f9f9;
       padding: 40px;
-      border-radius: 8px;
-      transition: 0.3s;
+      border-radius: 12px;
+      border: 1px solid #eef0f2;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      /* Spreads content to both sides */
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
       height: 100%;
     }
 
-    .config-card:hover {
-      transform: translateY(-5px);
+    /* Left side alignment */
+    .card-left {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      /* Spaces the icon away from the text */
     }
 
+    /* Micro-interactions on Hover */
+    .config-card:hover {
+      transform: translateY(-5px);
+      background: #ffffff;
+      border-color: #bfa13b;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+    }
+
+    /* Icon Box Styling */
     .icon-box {
-      width: 90px;
-      height: 90px;
-      background: #fff;
+      width: 75px;
+      height: 75px;
+      background: #ffffff;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 25px;
-      font-size: 40px;
-      color: #d4af37;
-    }
-
-    .config-card h3 {
       font-size: 32px;
+      color: #bfa13b;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+      transition: all 0.4s ease;
+      flex-shrink: 0;
+      /* Prevents icon from shrinking on smaller screens */
+    }
+
+    .config-card:hover .icon-box {
+      background: #bfa13b;
+      color: #ffffff;
+    }
+
+    /* Content Styling */
+    .card-content h3 {
+      font-size: 28px;
       font-weight: 700;
+      color: #1a1a1a;
+      margin: 0 0 5px 0;
     }
 
-    .config-card p {
-      font-size: 20px;
-      color: #666;
+    .card-content .area-text {
+      font-size: 16px;
+      color: #777777;
+      margin: 0;
     }
 
-    .config-card a {
-      color: #d4af37;
+    /* Right Aligned CTA Button */
+    .submit-enquiry-btn {
+      display: inline-block;
+      background: #111111;
+      color: #ffffff !important;
       text-decoration: none;
-      font-size: 22px;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 14px 28px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+      /* Ensures button text stays on one line */
+      border: 1px solid #111111;
+    }
+
+    .submit-enquiry-btn:hover {
+      background: #bfa13b;
+      border-color: #bfa13b;
+      color: #ffffff !important;
+      box-shadow: 0 8px 20px rgba(191, 161, 59, 0.25);
+    }
+
+    /* Responsive Fix for Mobile Viewports */
+    @media (max-width: 767px) {
+      .config-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+      }
+
+      .card-left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+      }
+
+      .card-right {
+        width: 100%;
+      }
+
+      .submit-enquiry-btn {
+        width: 100%;
+        text-align: center;
+      }
     }
   </style>
   <section class="comfort-area" id="amenities">
@@ -325,95 +486,83 @@
 
       <!-- Tabs -->
       <div class="gallery-tabs">
-        <button class="tab-btn active" onclick="showTab('elevation', this)">
-          Elevation
-        </button>
-        <button class="tab-btn" onclick="showTab('amenities-gallery', this)">
-          Amenities
-        </button>
-        <button class="tab-btn" onclick="showTab('interior', this)">
-          Interior
-        </button>
-        <button class="tab-btn" onclick="showTab('floorplan', this)">
-          Floor Plan
-        </button>
+        <button class="tab-btn active" onclick="showTab('elevation', this)">Elevation</button>
+        <button class="tab-btn" onclick="showTab('amenities-gallery', this)">Amenities</button>
+        <button class="tab-btn" onclick="showTab('interior', this)">Interior</button>
+        <button class="tab-btn" onclick="showTab('floorplan', this)">Floor Plan</button>
       </div>
 
       <!-- Elevation -->
       <div id="elevation" class="tab-content active">
-        <div class="gallery-grid">
-          <div class="gallery-box">
-            <img src="./assets/Elevation/1-bhk-for-sale-in-jogeshwari-east.jpg" alt="Elevation" />
+        <div class="gallery-wrapper">
+          <button class="scroll-btn left" onclick="scrollGallery(this,-1)">&#10094;</button>
+          <div class="gallery-scroll auto-scroll">
+            <div class="gallery-box">
+              <img src="./assets/Elevation/1-bhk-for-sale-in-jogeshwari-east.jpg" alt="">
+            </div>
+            <div class="gallery-box">
+              <img src="./assets/Elevation/1-bhk-jogeshwari-east.jpg" alt="">
+            </div>
           </div>
-          <div class="gallery-box">
-            <img src="./assets/Elevation/1-bhk-jogeshwari-east.jpg" alt="Elevation" />
-          </div>
+          <button class="scroll-btn right" onclick="scrollGallery(this,1)">&#10095;</button>
         </div>
-        <p class="img-caption">Artist’s Impression</p>
       </div>
 
       <!-- Amenities -->
       <div id="amenities-gallery" class="tab-content">
-        <div class="gallery-grid">
-          <div class="gallery-box">
-            <img src="assets/Amenities/apartment-jogeshwari-east.jpg" alt="Amenities" />
+        <div class="gallery-wrapper">
+          <button class="scroll-btn left" onclick="scrollGallery(this,-1)">&#10094;</button>
+          <div class="gallery-scroll auto-scroll">
+            <div class="gallery-box"><img src="assets/Amenities/apartment-jogeshwari-east.jpg"></div>
+            <div class="gallery-box"><img src="assets/Amenities/flat-for-sale-in-jogeshwari-east.jpg"></div>
+            <div class="gallery-box"><img src="assets/Amenities/flat-in-jogeshwari-east-under-construction.jpg"></div>
+            <div class="gallery-box"><img src="assets/Amenities/jogeshwari-apartments-east.jpg"></div>
+            <div class="gallery-box"><img src="./assets/Amenities/jogeshwari-east-property.jpg"></div>
+            <div class="gallery-box"><img src="./assets/Amenities/under-construction-projects-in-jogeshwari-east.jpg">
+            </div>
           </div>
-          <div class="gallery-box">
-            <img src="assets/Amenities/flat-for-sale-in-jogeshwari-east.jpg" alt="Amenities" />
-          </div>
-          <div class="gallery-box">
-            <img src="assets/Amenities/flat-in-jogeshwari-east-under-construction.jpg" alt="Amenities" />
-          </div>
-          <div class="gallery-box">
-            <img src="assets/Amenities/jogeshwari-apartments-east.jpg" alt="Amenities" />
-          </div>
-          <div class="gallery-box">
-            <img src="./assets/Amenities/jogeshwari-east-property.jpg" alt="Amenities" />
-          </div>
-          <div class="gallery-box">
-            <img src="./assets/Amenities/under-construction-projects-in-jogeshwari-east.jpg" alt="Amenities" />
-          </div>
+          <button class="scroll-btn right" onclick="scrollGallery(this,1)">&#10095;</button>
         </div>
-        <p class="img-caption">Artist’s Impression</p>
       </div>
 
       <!-- Interior -->
       <div id="interior" class="tab-content">
-        <div class="gallery-grid">
-          <div class="gallery-box">
-            <img src="./assets/Interior/1-bhk-in-jogeshwari-east-for-sale.jpg" alt="Interior" />
+        <div class="gallery-wrapper">
+          <button class="scroll-btn left" onclick="scrollGallery(this,-1)">&#10094;</button>
+          <div class="gallery-scroll auto-scroll">
+            <div class="gallery-box"><img src="./assets/Interior/1-bhk-in-jogeshwari-east-for-sale.jpg"></div>
+            <div class="gallery-box"><img src="./assets/Interior/jogeshwari-east-1-bhk-flat-price.jpg"></div>
           </div>
-          <div class="gallery-box">
-            <img src="./assets/Interior/jogeshwari-east-1-bhk-flat-price.jpg" alt="Interior" />
-          </div>
+          <button class="scroll-btn right" onclick="scrollGallery(this,1)">&#10095;</button>
         </div>
-        <p class="img-caption">Artist’s Impression</p>
       </div>
 
       <!-- Floor Plan -->
       <div id="floorplan" class="tab-content">
-        <div class="gallery-grid">
-          <div class="gallery-box floor-blur">
-            <img src="assets/Floor-Plan/flat-in-jogeshwari-east.jpg" alt="Floor Plan" />
-            <div class="floor-overlay">
-              <button onclick="openEnquiryPopup()">View Floor Plan</button>
+        <div class="gallery-wrapper">
+          <button class="scroll-btn left" onclick="scrollGallery(this,-1)">&#10094;</button>
+          <div class="gallery-scroll auto-scroll">
+            <div class="gallery-box floor-blur">
+              <img src="assets/Floor-Plan/flat-in-jogeshwari-east.jpg">
+              <div class="floor-overlay">
+                <button onclick="openEnquiryPopup()">View Floor Plan</button>
+              </div>
             </div>
-          </div>
 
-          <div class="gallery-box floor-blur">
-            <img src="assets/Floor-Plan/jogeshwari-east-flat-price.jpg" alt="Floor Plan" />
-            <div class="floor-overlay">
-              <button onclick="openEnquiryPopup()">View Floor Plan</button>
+            <div class="gallery-box floor-blur">
+              <img src="assets/Floor-Plan/jogeshwari-east-flat-price.jpg">
+              <div class="floor-overlay">
+                <button onclick="openEnquiryPopup()">View Floor Plan</button>
+              </div>
             </div>
           </div>
+          <button class="scroll-btn right" onclick="scrollGallery(this,1)">&#10095;</button>
         </div>
 
         <div class="floor-options">
           <span>1 BHK</span>
           <span>Jodi Apartment</span>
         </div>
-
-        <p class="img-caption">Artist’s Impression</p>
       </div>
     </div>
   </section>
@@ -433,21 +582,13 @@
     .gallery-title h2 {
       font-size: 42px;
       color: #d4af37;
-      font-weight: 700;
-      margin-bottom: 10px;
     }
 
-    .gallery-title p {
-      font-size: 18px;
-      color: #666;
-    }
-
-    /* Tabs */
     .gallery-tabs {
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
       gap: 12px;
+      flex-wrap: wrap;
       margin-bottom: 35px;
     }
 
@@ -455,57 +596,47 @@
       padding: 12px 20px;
       border: 1px solid #ddd;
       background: #fff;
-      cursor: pointer;
       border-radius: 8px;
-      transition: 0.3s;
-      min-width: 120px;
-      font-size: 15px;
-      font-weight: 500;
+      cursor: pointer;
     }
 
-    .tab-btn.active,
-    .tab-btn:hover {
+    .tab-btn.active {
       background: #d4af37;
       color: #fff;
     }
 
-    /* Content */
     .tab-content {
       display: none;
-      animation: fadeIn 0.4s ease;
     }
 
     .tab-content.active {
       display: block;
     }
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(12px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* Grid */
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
-
-    /* Cards */
-    .gallery-box {
-      width: 100%;
-      height: 350px;
-      overflow: hidden;
-      border-radius: 18px;
+    .gallery-wrapper {
       position: relative;
-      background: #fff;
+    }
+
+    .gallery-scroll {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+      padding: 10px 50px;
+    }
+
+    .gallery-scroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .gallery-box {
+      min-width: 420px;
+      height: 320px;
+      border-radius: 18px;
+      overflow: hidden;
+      flex-shrink: 0;
+      position: relative;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     }
 
@@ -513,14 +644,40 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: 0.4s;
     }
 
-    .gallery-box:hover img {
-      transform: scale(1.06);
+    .scroll-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #d4af37;
+      color: #fff;
+      border: none;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 10;
+      font-size: 20px;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      transition: all 0.3s ease;
     }
 
-    /* Floor Plan */
+    .scroll-btn:hover {
+      background: #111111;
+      transform: translateY(-50%) scale(1.05);
+    }
+
+    .scroll-btn.left {
+      left: 0;
+    }
+
+    .scroll-btn.right {
+      right: 0;
+    }
+
     .floor-blur img {
       filter: blur(7px);
     }
@@ -537,18 +694,15 @@
       background: #d4af37;
       color: #fff;
       border: none;
-      padding: 12px 22px;
+      padding: 12px 20px;
       border-radius: 8px;
-      cursor: pointer;
     }
 
-    /* Floor Labels */
     .floor-options {
       display: flex;
       justify-content: center;
       gap: 15px;
       margin-top: 20px;
-      flex-wrap: wrap;
     }
 
     .floor-options span {
@@ -558,257 +712,655 @@
       border-radius: 8px;
     }
 
-    .img-caption {
-      text-align: center;
-      margin-top: 15px;
-      font-style: italic;
-      color: #666;
-    }
-
-    /* Tablet */
-    @media (max-width: 991px) {
-      .gallery-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
+    @media (max-width: 767px) {
       .gallery-box {
+        min-width: 280px;
         height: 220px;
       }
-    }
 
-    /* Mobile */
-    @media (max-width: 767px) {
-      .gallery-area {
-        padding: 50px 12px;
-      }
-
-      .gallery-title h2 {
-        font-size: 32px;
-      }
-
-      .gallery-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .gallery-box {
-        height: 210px;
-      }
-
-      .tab-btn {
-        min-width: 105px;
-        font-size: 14px;
-        padding: 10px 14px;
-      }
-    }
-
-    /* Small Mobile */
-    @media (max-width: 480px) {
-      .gallery-title h2 {
-        font-size: 28px;
-      }
-
-      .gallery-box {
-        height: 180px;
-      }
-
-      .tab-btn {
-        min-width: 95px;
-        font-size: 13px;
-        padding: 9px 10px;
+      .scroll-btn {
+        width: 38px;
+        height: 38px;
       }
     }
   </style>
-
   <script>
+    // Global function to switch tabs
     function showTab(tabId, button) {
-      document.querySelectorAll(".tab-content").forEach((tab) => {
+      // Hide all tabs
+      document.querySelectorAll(".tab-content").forEach(tab => {
         tab.classList.remove("active");
       });
 
-      document.querySelectorAll(".tab-btn").forEach((btn) => {
+      // Deactivate all tab buttons
+      document.querySelectorAll(".tab-btn").forEach(btn => {
         btn.classList.remove("active");
       });
 
-      document.getElementById(tabId).classList.add("active");
-      button.classList.add("active");
+      // Show target tab
+      const targetTab = document.getElementById(tabId);
+      if (targetTab) {
+        targetTab.classList.add("active");
+      }
+
+      // Activate clicked button
+      if (button) {
+        button.classList.add("active");
+      }
+
+      // Check and toggle button visibilities for the newly shown tab
+      updateGalleryScrollButtons();
     }
+
+    // Global function to manually scroll gallery left/right
+    function scrollGallery(button, direction) {
+      const wrapper = button.closest(".gallery-wrapper");
+      if (!wrapper) return;
+      const gallery = wrapper.querySelector(".gallery-scroll");
+      if (gallery) {
+        const cardBox = gallery.querySelector(".gallery-box");
+        const cardWidth = cardBox ? cardBox.offsetWidth : 420;
+        const scrollAmount = (cardWidth + 20) * direction; // card width + gap
+        gallery.scrollBy({
+          left: scrollAmount,
+          behavior: "smooth"
+        });
+      }
+    }
+
+    // Function to show/hide scroll buttons depending on scrollability
+    function updateGalleryScrollButtons() {
+      document.querySelectorAll(".gallery-wrapper").forEach(wrapper => {
+        const gallery = wrapper.querySelector(".gallery-scroll");
+        const leftBtn = wrapper.querySelector(".scroll-btn.left");
+        const rightBtn = wrapper.querySelector(".scroll-btn.right");
+
+        if (gallery && leftBtn && rightBtn) {
+          // Subpixel tolerance + 15px to account for dynamic padding
+          if (gallery.scrollWidth <= gallery.clientWidth + 15) {
+            leftBtn.style.display = "none";
+            rightBtn.style.display = "none";
+            gallery.style.justifyContent = "center"; // Center items for premium look
+          } else {
+            leftBtn.style.display = "flex";
+            rightBtn.style.display = "flex";
+            gallery.style.justifyContent = "flex-start"; // Align left for scrolling
+          }
+        }
+      });
+    }
+
+    // Auto-scroll loop control
+    let autoScrollPaused = false;
+
+    // Premium Feature: Pause auto-scroll on mouse hover
+    document.querySelectorAll(".gallery-wrapper").forEach(wrapper => {
+      wrapper.addEventListener("mouseenter", () => { autoScrollPaused = true; });
+      wrapper.addEventListener("mouseleave", () => { autoScrollPaused = false; });
+    });
+
+    // Auto scroll interval loop
+    setInterval(() => {
+      if (autoScrollPaused) return;
+
+      const activeTab = document.querySelector(".tab-content.active");
+      if (!activeTab) return;
+
+      const gallery = activeTab.querySelector(".gallery-scroll");
+      if (gallery && gallery.scrollWidth > gallery.clientWidth + 15) {
+        const cardBox = gallery.querySelector(".gallery-box");
+        const cardWidth = cardBox ? cardBox.offsetWidth : 420;
+        const scrollAmount = cardWidth + 20; // card width + gap
+
+        // Loop back smoothly if we reach the end
+        if (gallery.scrollLeft + gallery.clientWidth >= gallery.scrollWidth - 15) {
+          gallery.scrollTo({ left: 0, behavior: "smooth" });
+        } else {
+          gallery.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        }
+      }
+    }, 3000);
+
+    // Run layout adjustments immediately and on DOM/Window updates
+    updateGalleryScrollButtons();
+    window.addEventListener("DOMContentLoaded", updateGalleryScrollButtons);
+    window.addEventListener("resize", updateGalleryScrollButtons);
   </script>
 
+
   <!-- Location Area -->
-  <div class="specialty-area pt-100 pb-70" id="advantage">
+  <section class="location-advantage-area pt-100 pb-70" id="advantage">
     <div class="container">
       <div class="section-title text-center">
         <span>LOCATION ADVANTAGE</span>
         <h2>Excellent Connectivity & Nearby Facilities</h2>
       </div>
 
-      <div class="row pt-45 align-items-center">
-        <!-- Google Map -->
-        <div class="col-lg-6">
-          <div class="specialty-img map-box">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.456804115904!2d72.861132!3d19.1314715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7d7b063181d%3A0x57da1b2dc42a3ce5!2sMeghwadi%20Police%20Station!5e0!3m2!1sen!2sin!4v1778781345697!5m2!1sen!2sin"
-              width="100%" height="500" style="border: 0" allowfullscreen="" loading="lazy">
-            </iframe>
-          </div>
+      <div class="location-wrapper">
+
+        <!-- Left Map Image -->
+        <div class="location-map">
+          <img src="assets/DTG-map.jpeg" alt="DTG Map">
         </div>
 
-        <!-- Connectivity Content -->
-        <div class="col-lg-6">
-          <div class="specialty-list">
-            <div class="specialty-list-card">
-              <!-- <i class="fas fa-road"></i> -->
-              <h3>Connectivity</h3>
-              <ul>
-                <li>5 mins from Jogeshwari-Vikhroli Link Road</li>
-                <li>7 mins from Western Express Highway</li>
-                <li>12 mins from Aarey Colony</li>
-                <li>10 mins from Jogeshwari Railway Station</li>
-                <li>8 mins from Mogra Metro Station</li>
-                <li>19 mins from CSM Int’l Airport</li>
-              </ul>
-            </div>
+        <!-- Right Accordion -->
+        <div class="location-accordion">
 
-            <div class="specialty-list-card mt-4">
-              <!-- <i class="fas fa-hospital"></i> -->
-              <h3>Facilities Nearby</h3>
-              <ul>
-                <li>6 mins to Holy Spirit Hospital</li>
-                <li>17 mins from Powai Educational Campus</li>
-                <li>20 mins from Infiniti Mall, Andheri</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Location Area End -->
-
-  <!-- About Area -->
-  <div class="about-area pt-100 pb-70" id="about">
-    <div class="container-fluid">
-      <div class="row align-items-center">
-        <!-- Left Image / Logo -->
-        <div class="col-lg-6">
-          <div class="about-img text-center">
-            <img src="assets/Elevation/about.jpg" alt="Logo" class="about-logo" />
-          </div>
-        </div>
-
-        <!-- Right Content -->
-        <div class="col-lg-6">
-          <div class="about-content">
-            <div class="section-title">
-              <span>About Us</span>
-              <h2>Shaping Tomorrow</h2>
-
-              <p>
-                Dhariwal Thirani Group is engaged in building redevelopment
-                and construction of residential and commercial projects. The
-                group has a proven track record of successful projects and
-                satisfied clients.
-              </p>
-
-              <p>
-                Led by a team of highly skilled professionals, the company has
-                a wealth of expertise in all aspects of building redevelopment
-                and construction, including project management, engineering,
-                architecture, and design.
-              </p>
-            </div>
-
-            <!-- Contact Form -->
-            <div class="contact-box">
-              <h4>Please enter the details below to get in touch with us!</h4>
-
-              <form class="enquiry-form-shared">
-                <input type="text" name="name" placeholder="Name" required />
-                <input type="tel" name="number" placeholder="Number" required />
-                <input type="email" name="email" placeholder="Email Id" required />
-
-                <button type="submit" class="default-btn btn-bg-one border-radius-5 submit-btn-shared">
-                  Submit
-                </button>
-                <div class="loader-shared" style="display: none; margin-top: 10px">
-                  Submitting...
-                </div>
-              </form>
-
-              <p class="terms">
-                By submitting your details, you agree to the Terms &
-                Conditions
-              </p>
-            </div>
-
-            <!-- Address -->
-            <div class="address-box">
-              <h5>Address:</h5>
-              <p>
-                24, Salsingkar Rd, Income Tax Colony, Sher E Punjab Colony,
-                Jogeshwari East, Mumbai, Maharashtra 400060
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- About Area End -->
-
-  <!-- CTA Form Section -->
-  <section class="cta-form-section" id="contact">
-    <div class="container">
-      <div class="cta-wrapper">
-        <!-- Download Brochure -->
-        <div class="cta-card brochure-card">
-          <div class="cta-header">
-            <h2>Download Brochure</h2>
-          </div>
-
-          <p>Please enter the details below to download the brochure.</p>
-
-          <form class="enquiry-form-shared">
-            <input type="text" name="name" placeholder="Name" required />
-            <input type="tel" name="number" placeholder="Number" required />
-            <input type="email" name="email" placeholder="Email ID" required />
-
-            <button type="submit" class="submit-btn-shared">
-              Download Brochure
+          <!-- Connectivity -->
+          <div class="accordion-item active">
+            <button class="accordion-header">
+              Connectivity
+              <span>⌃</span>
             </button>
-            <div class="loader-shared" style="display: none; margin-top: 10px">
-              Submitting...
+            <div class="accordion-content">
+              <div class="location-row">
+                <span>Jogeshwari-Vikhroli Link Road</span>
+                <span>5 mins</span>
+              </div>
+              <div class="location-row">
+                <span>Western Express Highway</span>
+                <span>7 mins</span>
+              </div>
+              <div class="location-row">
+                <span>Aarey Colony</span>
+                <span>12 mins</span>
+              </div>
+              <div class="location-row">
+                <span>Jogeshwari Railway Station</span>
+                <span>10 mins</span>
+              </div>
+              <div class="location-row">
+                <span>Mogra Metro Station</span>
+                <span>8 mins</span>
+              </div>
+              <div class="location-row">
+                <span>CSM Int’l Airport</span>
+                <span>19 mins</span>
+              </div>
             </div>
-          </form>
-        </div>
-
-        <!-- Enquire Now -->
-        <div class="cta-card enquire-card">
-          <div class="cta-header">
-            <h2>Enquire Now</h2>
           </div>
 
-          <p>
-            Please enter the details below to get the detailed pricing
-            information.
-          </p>
-
-          <form class="enquiry-form-shared">
-            <input type="text" name="name" placeholder="Name" required />
-            <input type="tel" name="number" placeholder="Number" required />
-            <input type="email" name="email" placeholder="Email ID" required />
-
-            <button type="submit" class="submit-btn-shared">
-              Enquire Now
+          <!-- Education -->
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Education
+              <span>⌄</span>
             </button>
-            <div class="loader-shared" style="display: none; margin-top: 10px">
-              Submitting...
+            <div class="accordion-content">
+              <div class="location-row">
+                <span>Powai Educational Campus</span>
+                <span>17 mins</span>
+              </div>
             </div>
-          </form>
+          </div>
+
+          <!-- Healthcare -->
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Healthcare
+              <span>⌄</span>
+            </button>
+            <div class="accordion-content">
+              <div class="location-row">
+                <span>Holy Spirit Hospital</span>
+                <span>6 mins</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Malls -->
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Malls
+              <span>⌄</span>
+            </button>
+            <div class="accordion-content">
+              <div class="location-row">
+                <span>Infiniti Mall, Andheri</span>
+                <span>20 mins</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Corporate Park -->
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Corporate Park
+              <span>⌄</span>
+            </button>
+            <div class="accordion-content">
+              <div class="location-row">
+                <span>SEEPZ</span>
+                <span>15 mins</span>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
   </section>
+
+  <style>
+    .location-advantage-area {
+      background: #fff;
+      padding: 100px 0 70px;
+    }
+
+    .location-wrapper {
+      display: flex;
+      gap: 40px;
+      align-items: stretch;
+      margin-top: 50px;
+    }
+
+    .location-map {
+      flex: 1;
+    }
+
+    .location-map img {
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .location-accordion {
+      flex: 1;
+      background: #fff;
+      border: 2px solid #e5e5e5;
+      border-radius: 12px;
+      padding: 25px 30px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    }
+
+    .accordion-item {
+      border-bottom: 1px solid #ddd;
+    }
+
+    .accordion-header {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 10px 0;
+      font-size: 18px;
+      font-weight: 500;
+      color: #264d2d;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .accordion-header span {
+      font-size: 20px;
+    }
+
+    .accordion-content {
+      display: none;
+      padding-bottom: 20px;
+    }
+
+    .accordion-item.active .accordion-content {
+      display: block;
+    }
+
+    .location-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 14px 0;
+      border-bottom: 1px solid #eee;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .location-row:last-child {
+      border-bottom: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 991px) {
+      .location-wrapper {
+        flex-direction: column;
+      }
+
+      .accordion-header {
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .location-accordion {
+        padding: 20px;
+      }
+
+      .accordion-header {
+        font-size: 18px;
+      }
+
+      .location-row {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <script>
+    document.querySelectorAll('.accordion-header').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+
+        document.querySelectorAll('.accordion-item').forEach(i => {
+          if (i !== item) {
+            i.classList.remove('active');
+            i.querySelector('span').textContent = '⌄';
+          }
+        });
+
+        item.classList.toggle('active');
+
+        const icon = button.querySelector('span');
+        icon.textContent = item.classList.contains('active') ? '⌃' : '⌄';
+      });
+    });
+  </script>
+  <!-- Location Area End -->
+
+  <!-- About Area -->
+  <!-- About Area -->
+  <section class="about-area-new pt-100 pb-70" id="about">
+    <div class="container">
+
+      <!-- Top About Content -->
+      <div class="about-top text-center">
+        <span class="about-subtitle">About Us</span>
+        <h2>Dhariwal Thirani Group</h2>
+
+        <p>
+          Dhariwal Thirani Group is engaged in building redevelopment and construction
+          of residential and commercial projects. With years of excellence, the group
+          has delivered landmark developments with a strong focus on quality, trust,
+          and customer satisfaction.
+        </p>
+      </div>
+
+      <!-- Bottom Section -->
+      <div class="about-bottom">
+
+        <!-- Google Map -->
+        <div class="map-box">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.8389797001078!2d72.8661327!3d19.2458481!2m3!1f0!2f0!3f0!0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b0e832555555%3A0xcfabee789cc8a91b!2sDHARIWAL%20THIRANI%20GROUP!5e0!3m2!1sen!2sin!4v1779042273806!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <!-- Form -->
+        <div class="enquiry-box">
+          <h3>Enquire Now</h3>
+
+          <form class="enquiry-form-shared">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="number" placeholder="Number" required>
+
+            <button type="submit" class="default-btn btn-bg-one border-radius-5 submit-btn-shared">
+              Submit
+            </button>
+
+            <div class="loader-shared" style="display:none; margin-top:10px;">
+              Submitting...
+            </div>
+          </form>
+
+          <p class="terms">
+            By submitting your details, you agree to the Terms & Conditions
+          </p>
+        </div>
+
+      </div>
+  </section>
+
+  <style>
+    .about-area-new {
+      background: #f8f8f8;
+    }
+
+    .about-top {
+      max-width: 900px;
+      margin: 0 auto 50px;
+    }
+
+    .about-subtitle {
+      color: #d4af37;
+      font-size: 18px;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .about-top h2 {
+      font-size: 42px;
+      font-weight: 600;
+      color: #1b1b1b;
+      margin-bottom: 20px;
+    }
+
+    .about-top p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    /* Stats */
+    .about-stats {
+      display: flex;
+      justify-content: center;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 60px;
+    }
+
+    .stat-box {
+      flex: 1;
+      text-align: center;
+      padding: 30px;
+      border-right: 1px solid #ddd;
+    }
+
+    .stat-box:last-child {
+      border-right: none;
+    }
+
+    .stat-box h3 {
+      font-size: 52px;
+      color: #d4af37;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .stat-box p {
+      font-size: 18px;
+      color: #444;
+    }
+
+    /* Bottom Section */
+    .about-bottom {
+      display: flex;
+      gap: 30px;
+      align-items: stretch;
+    }
+
+    .map-box,
+    .enquiry-box {
+      flex: 1;
+    }
+
+    .map-box iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 500px;
+      border: 0;
+      border-radius: 8px;
+    }
+
+    .enquiry-box {
+      background: #f8f2e8;
+      padding: 40px;
+      border-radius: 8px;
+    }
+
+    .enquiry-box h3 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .enquiry-form-shared input {
+      width: 100%;
+      height: 55px;
+      border: none;
+      border-bottom: 1px solid #aaa;
+      background: transparent;
+      margin-bottom: 20px;
+      padding: 10px 0;
+      font-size: 15px;
+    }
+
+    .enquiry-form-shared input:focus {
+      outline: none;
+      border-color: #d4af37;
+    }
+
+    .enquiry-form-shared button {
+      width: 100%;
+      margin-top: 15px;
+    }
+
+    .terms {
+      margin-top: 15px;
+      font-size: 13px;
+      text-align: center;
+      color: #666;
+    }
+
+    .address-box {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .address-box h5 {
+      color: #d4af37;
+      margin-bottom: 10px;
+    }
+
+    /* Responsive */
+    @media (max-width: 991px) {
+      .about-bottom {
+        flex-direction: column;
+      }
+
+      .about-stats {
+        flex-direction: column;
+      }
+
+      .stat-box {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .stat-box:last-child {
+        border-bottom: none;
+      }
+
+      .about-top h2 {
+        font-size: 32px;
+      }
+
+      .stat-box h3 {
+        font-size: 42px;
+      }
+
+      .map-box iframe {
+        min-height: 350px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .enquiry-box {
+        padding: 25px;
+      }
+
+      .enquiry-box h3 {
+        font-size: 28px;
+      }
+
+      .about-top h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+  
+  <!-- CTA Buttons Section -->
+  <section class="cta-buttons-section" id="contact">
+    <div class="container">
+      <div class="cta-btn-wrapper">
+        <button class="default-btn btn-bg-one border-radius-5" onclick="openBrochurePopup()">
+          Download Brochure
+        </button>
+        <button class="default-btn btn-bg-one border-radius-5" onclick="openEnquiryPopup()">
+          Enquire Now
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    /* CTA Buttons Section Styling */
+    .cta-buttons-section {
+      padding: 50px 0;
+      background: #ffffff;
+      border-top: 1px solid rgba(212, 175, 55, 0.1);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    }
+
+    .cta-btn-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .cta-btn-wrapper .default-btn {
+      padding: 15px 35px !important;
+      font-size: 16px !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.8px !important;
+      text-transform: uppercase !important;
+      box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25) !important;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+
+    .cta-btn-wrapper .default-btn:hover {
+      background: #111111 !important;
+      border-color: #111111 !important;
+      transform: translateY(-2px) !important;
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15) !important;
+    }
+
+    @media (max-width: 576px) {
+      .cta-btn-wrapper {
+        flex-direction: column;
+        width: 100%;
+      }
+      .cta-btn-wrapper .default-btn {
+        width: 100% !important;
+        text-align: center !important;
+      }
+    }
+  </style>
 
   <!-- Footer Area -->
   <footer class="footer-area footer-bg">
@@ -934,6 +1486,39 @@
             <span class="visually-hidden">Loading...</span>
           </div>
           <p style="margin-bottom: 0">Submitting...</p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Brochure Download Popup -->
+  <div id="brochurePopup" class="popup-overlay">
+    <div class="popup-box">
+      <span class="popup-close" onclick="closeBrochurePopup()">✕</span>
+
+      <div class="popup-logo">
+        <img src="assets/Logo/dt-auram.jpg" alt="AURAM Logo" />
+      </div>
+
+      <h2>Download Brochure</h2>
+
+      <p>
+        Please enter your details below to download the official brochure.
+      </p>
+
+      <form id="brochureDownloadForm">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="tel" name="number" placeholder="Number" required />
+        <input type="email" name="email" placeholder="Email ID" required />
+
+        <button type="submit" class="submit-enquiry-btn" id="brochureSubmitBtn">
+          Download Brochure
+        </button>
+        <div id="brochureLoader" style="display: none; margin-top: 15px">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <p style="margin-bottom: 0">Submitting & Downloading...</p>
         </div>
       </form>
     </div>
@@ -1081,6 +1666,14 @@
       document.getElementById("enquiryPopup").classList.remove("active");
     }
 
+    function openBrochurePopup() {
+      document.getElementById("brochurePopup").classList.add("active");
+    }
+
+    function closeBrochurePopup() {
+      document.getElementById("brochurePopup").classList.remove("active");
+    }
+
     window.addEventListener("load", function () {
       setTimeout(function () {
         openEnquiryPopup();
@@ -1096,7 +1689,15 @@
       });
 
     document
-      .querySelectorAll(".enquiry-form-shared, #mainEnquiryForm")
+      .getElementById("brochurePopup")
+      .addEventListener("click", function (e) {
+        if (e.target === this) {
+          closeBrochurePopup();
+        }
+      });
+
+    document
+      .querySelectorAll(".enquiry-form-shared, #mainEnquiryForm, #brochureDownloadForm")
       .forEach((form) => {
         form.addEventListener("submit", function (e) {
           e.preventDefault();
@@ -1106,7 +1707,7 @@
             'button[type="submit"]',
           );
           const loader = currentForm.querySelector(
-            ".loader-shared, #popupLoader",
+            ".loader-shared, #popupLoader, #brochureLoader",
           );
           const originalBtnText = submitBtn ? submitBtn.innerText : "Submit";
 
@@ -1138,10 +1739,28 @@
             body: params.toString(),
           })
             .then(() => {
-              alert("Enquiry Submitted Successfully!");
               currentForm.reset();
+              
               if (currentForm.id === "mainEnquiryForm") {
                 closeEnquiryPopup();
+                window.location.href = "thankyou.html";
+              } else if (currentForm.id === "brochureDownloadForm") {
+                closeBrochurePopup();
+                
+                // Trigger auto-download of assets/brochure.pdf
+                const link = document.createElement("a");
+                link.href = "assets/brochure.pdf";
+                link.download = "brochure.pdf";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                
+                // Redirect after starting the download
+                setTimeout(() => {
+                  window.location.href = "thankyou.html";
+                }, 500);
+              } else {
+                window.location.href = "thankyou.html";
               }
             })
             .catch((error) => {

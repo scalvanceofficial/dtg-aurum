@@ -1,9 +1,39 @@
 (function($) {
     'use strict';
 
-    // Mean Menu JS
+    // Mean Menu JS - disabled for premium left drawer menu
+    /*
     jQuery('.mean-menu').meanmenu({ 
         meanScreenWidth: "991"
+    });
+    */
+
+    // Custom Mobile Drawer Menu JS
+    window.openMobileSidebar = function() {
+        $('#mobileSidebar').addClass('open');
+        $('#sidebarOverlay').addClass('open');
+        $('body').css('overflow', 'hidden'); // Prevent background scrolling
+    };
+
+    window.closeMobileSidebar = function() {
+        $('#mobileSidebar').removeClass('open');
+        $('#sidebarOverlay').removeClass('open');
+        $('body').css('overflow', ''); // Restore scrolling
+    };
+
+    $('#mobileMenuToggle').on('click', function(e) {
+        e.preventDefault();
+        window.openMobileSidebar();
+    });
+
+    $('#sidebarCloseBtn, #sidebarOverlay').on('click', function(e) {
+        e.preventDefault();
+        window.closeMobileSidebar();
+    });
+
+    // Close mobile sidebar when clicking any anchor link
+    $('#mobileSidebar .sidebar-nav a').on('click', function() {
+        window.closeMobileSidebar();
     });
 
     // Navbar Area
