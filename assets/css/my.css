@@ -658,3 +658,10 @@
     padding: 15px 0;
     border-top: 1px solid #000000;
 }
+
+
+.switch-box input:checked+.slider {
+    display: none;
+    background-color: transparent;
+    border: 1.5px solid #EE786C;
+}
