@@ -209,37 +209,62 @@
 
   <section class="project-highlight">
     <div class="container">
+
       <div class="highlight-heading">
         <h2>Project Highlight</h2>
         <p>
-          Experience premium connectivity, modern amenities, and luxurious
-          living.
+          Experience premium connectivity, modern amenities, and luxurious living.
         </p>
       </div>
 
-      <div class="highlight-grid">
-        <div class="highlight-card">
-          <i class="fas fa-train"></i>
-          <h4>10 mins from Jogeshwari Railway Station</h4>
+      <div class="highlight-wrapper">
+
+        <button class="scroll-btn left-btn" onclick="scrollHighlights(-1)">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <div class="highlight-grid" id="highlightGrid">
+
+          <div class="highlight-card">
+            <i class="fas fa-train"></i>
+            <h4>10 mins from Jogeshwari Railway Station</h4>
+          </div>
+
+          <div class="highlight-card">
+            <i class="fas fa-subway"></i>
+            <h4>8 mins from Mogra Metro Station</h4>
+          </div>
+
+          <div class="highlight-card">
+            <i class="fas fa-building"></i>
+            <h4>Rooftop Amenities</h4>
+          </div>
+
+          <div class="highlight-card">
+            <i class="fas fa-door-open"></i>
+            <h4>Luxurious Entrance Lobby</h4>
+          </div>
+
         </div>
 
-        <div class="highlight-card">
-          <i class="fas fa-subway"></i>
-          <h4>8 mins from Mogra Metro Station</h4>
-        </div>
+        <button class="scroll-btn right-btn" onclick="scrollHighlights(1)">
+          <i class="fas fa-chevron-right"></i>
+        </button>
 
-        <div class="highlight-card">
-          <i class="fas fa-building"></i>
-          <h4>Rooftop Amenities</h4>
-        </div>
-
-        <div class="highlight-card">
-          <i class="fas fa-door-open"></i>
-          <h4>Luxurious Entrance Lobby</h4>
-        </div>
       </div>
     </div>
   </section>
+
+  <script>
+    function scrollHighlights(direction) {
+      const container = document.getElementById('highlightGrid');
+
+      container.scrollBy({
+        left: direction * 300,
+        behavior: 'smooth'
+      });
+    }
+  </script>
 
   <section class="configuration-area pt-100 pb-70">
     <div class="container">
@@ -416,6 +441,7 @@
       }
     }
   </style>
+
   <section class="comfort-area" id="amenities">
     <div class="container">
       <div class="comfort-title">
@@ -476,6 +502,54 @@
       </div>
     </div>
   </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const grid = document.querySelector(".comfort-grid");
+      if (!grid) return;
+
+      let autoScrollInterval;
+
+      function startAutoScroll() {
+        // Only scroll if the container is horizontally scrollable (overflowing)
+        if (grid.scrollWidth > grid.clientWidth) {
+          if (autoScrollInterval) clearInterval(autoScrollInterval);
+
+          autoScrollInterval = setInterval(() => {
+            const card = grid.querySelector(".comfort-box");
+            const cardWidth = card ? card.offsetWidth : 260;
+            const style = window.getComputedStyle(grid);
+            const gap = parseFloat(style.gap) || 16;
+            const step = cardWidth + gap;
+
+            // Subpixel tolerance of 5px for reaching the end
+            if (grid.scrollLeft + grid.clientWidth >= grid.scrollWidth - 5) {
+              grid.scrollTo({
+                left: 0,
+                behavior: "smooth"
+              });
+            } else {
+              grid.scrollTo({
+                left: grid.scrollLeft + step,
+                behavior: "smooth"
+              });
+            }
+          }, 2500);
+        } else {
+          if (autoScrollInterval) {
+            clearInterval(autoScrollInterval);
+            autoScrollInterval = null;
+          }
+        }
+      }
+
+      // Initial call
+      startAutoScroll();
+
+      // Recalculate and manage scrolling on window resize
+      window.addEventListener("resize", startAutoScroll);
+    });
+  </script>
 
   <section class="gallery-area" id="gallery">
     <div class="container">
@@ -646,7 +720,7 @@
       object-fit: cover;
     }
 
-    .scroll-btn {
+    .gallery-wrapper .scroll-btn {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -665,16 +739,16 @@
       transition: all 0.3s ease;
     }
 
-    .scroll-btn:hover {
+    .gallery-wrapper .scroll-btn:hover {
       background: #111111;
       transform: translateY(-50%) scale(1.05);
     }
 
-    .scroll-btn.left {
+    .gallery-wrapper .scroll-btn.left {
       left: 0;
     }
 
-    .scroll-btn.right {
+    .gallery-wrapper .scroll-btn.right {
       right: 0;
     }
 
@@ -1301,7 +1375,7 @@
       }
     }
   </style>
-  
+
   <!-- CTA Buttons Section -->
   <section class="cta-buttons-section" id="contact">
     <div class="container">
@@ -1355,6 +1429,7 @@
         flex-direction: column;
         width: 100%;
       }
+
       .cta-btn-wrapper .default-btn {
         width: 100% !important;
         text-align: center !important;
@@ -1740,13 +1815,13 @@
           })
             .then(() => {
               currentForm.reset();
-              
+
               if (currentForm.id === "mainEnquiryForm") {
                 closeEnquiryPopup();
                 window.location.href = "thankyou.html";
               } else if (currentForm.id === "brochureDownloadForm") {
                 closeBrochurePopup();
-                
+
                 // Trigger auto-download of assets/brochure.pdf
                 const link = document.createElement("a");
                 link.href = "assets/brochure.pdf";
@@ -1754,7 +1829,7 @@
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
-                
+
                 // Redirect after starting the download
                 setTimeout(() => {
                   window.location.href = "thankyou.html";
